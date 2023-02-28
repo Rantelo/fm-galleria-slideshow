@@ -1,0 +1,52 @@
+.App {
+  font-family: 'Libre Baskerville';
+  position: relative;
+  background: #FFFFFF;
+  margin: 0 auto;
+  max-width: 1440px;
+
+  .App-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    border-bottom: solid 1px #E5E5E5;
+
+  }
+
+  .gallery {
+    columns: 4 327px;
+    .tile {
+      position: relative;
+      color: #FFFFFF;
+      font-style: normal;
+
+      &__name {
+        height: 30px;
+        left: 0%;
+        position: absolute;
+        right: 0%;
+        top: calc(50% - 30px/2 - 12px);
+
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+      }
+      &__artist {
+        height: 16px;
+        left: 0%;
+        position: absolute;
+        right: 0%;
+        top: calc(50% - 16px/2 + 18px);
+
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+
+        mix-blend-mode: normal;
+        opacity: 0.75;
+      }
+    }
+
+  }
+}
+
